@@ -11,17 +11,17 @@ import "./Porosity.css"
 
 const Porositycalc = () => {
 
-    const [num1, setAdd1]= useState("")
-    const [num2, setAdd2]= useState("")
+    const [Total_Volume, setTotalVolume]= useState("")
+    const [Solid_Volume, setSolidVolume]= useState("")
     const [poreVolume, setPore]= useState(0)
-    const [numtotal, setTotal]= useState(0)
+    const [CalculatePorosity, SetCalculatePorosity]= useState(0)
 
     const handleChange1 = (e)=> {
-        setAdd1(e.target.value)
+        setTotalVolume(e.target.value)
     }
 
     const handleChange2 = (e)=> {
-        setAdd2(e.target.value)
+        setSolidVolume(e.target.value)
     }
 
 
@@ -30,11 +30,11 @@ const Porositycalc = () => {
 
     const handleSubmit=(event)=> {
         event.preventDefault()
-        setPore(parseInt(num1) - parseInt(num2))
-        let PoreVolume = (parseInt(num1) - parseInt(num2)) 
-        let porosity = PoreVolume / num1
+        setPore(parseInt(Total_Volume) - parseInt(Solid_Volume))
+        let PoreVolume = (parseInt(Total_Volume) - parseInt(Solid_Volume)) 
+        let porosity = PoreVolume / Total_Volume
         let result = porosity * 100
-        setTotal(result)
+        SetCalculatePorosity(result)
     }
 
 
@@ -83,8 +83,8 @@ const Porositycalc = () => {
      
 <Card style={{ width: '15rem' }} className ="card">
   <ListGroup variant="flush" className = "Listgroup">
-    <ListGroup.Item>Pore Volume = <span className ="pore-volume">{poreVolume}cm^3</span></ListGroup.Item>
-    <ListGroup.Item>Porosity = <span className = "porosity">{numtotal}%</span> </ListGroup.Item>
+    <ListGroup.Item>Pore Volume =  <span className ="pore-volume">{poreVolume}cm^3</span></ListGroup.Item>
+    <ListGroup.Item>Porosity = <span className = "porosity">{CalculatePorosity}%</span> </ListGroup.Item>
   </ListGroup>
 </Card>
 
