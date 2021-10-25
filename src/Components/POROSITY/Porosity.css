@@ -1,0 +1,72 @@
+body {
+  background-image: url("../../Images/mountain.jpeg");
+  overflow-x: hidden;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.Porosity-Container {
+  padding: 2rem;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+.calculator {
+  color: #f86d70;
+}
+
+.label-text {
+  font-weight: bold;
+  text-align: left;
+  padding-left: 0rem !important;
+}
+
+.calculate-porosity-btn {
+  background-color: #f86d70 !important;
+  border: #f86d70 !important;
+  margin-bottom: 1rem !important;
+}
+
+.card {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1) !important;
+  margin-top: 1rem;
+}
+
+.porosity {
+  color: #f86d70;
+}
+
+.pore-volume {
+  color: purple;
+}
+
+@media only screen and (min-width: 768px) {
+  .login-heading {
+    font-size: 2.2rem;
+  }
+
+  .Porosity-Container {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .form-input {
+    width: 70% !important;
+  }
+
+  .card {
+    margin-top: 10rem;
+    height: 10rem;
+  }
+}
