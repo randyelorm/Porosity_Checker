@@ -1,6 +1,8 @@
 body {
   background-image: url("../../Images/mountain.jpeg");
   overflow-x: hidden;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .form-container {
@@ -37,6 +39,10 @@ body {
 .card {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1) !important;
   margin-top: 1rem;
+}
+
+.porosity-text {
+  font-weight: 900;
 }
 
 .porosity {

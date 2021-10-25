@@ -84,7 +84,7 @@ const Porositycalc = () => {
 <Card style={{ width: '15rem' }} className ="card">
   <ListGroup variant="flush" className = "Listgroup">
     <ListGroup.Item>Pore Volume =  <span className ="pore-volume">{poreVolume}cm^3</span></ListGroup.Item>
-    <ListGroup.Item>Porosity = <span className = "porosity">{CalculatePorosity}%</span> </ListGroup.Item>
+    <ListGroup.Item> <span className ="porosity-text">Porosity = <span className = "porosity">{CalculatePorosity}%</span> </span>    </ListGroup.Item>
   </ListGroup>
 </Card>
 
